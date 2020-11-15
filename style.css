@@ -13,19 +13,19 @@
 }
 /*===== text font =====*/
 
-@media screen and (min-width: 768px){
-    :root{
-        --big-font-size: 3.5rem;
-        --h2-font-size: 2rem;
-        --normal-font-size: 1rem;
-    }
-}
-
 :root{
-    --body-font: 'Poppins', sans-serif;
+    --body-font: "Poppins", sans-serif;
     --big-font-size: 2rem;
     --h2-font-size: 1.25rem;
     --normal-font-size: 0.938rem;
+}
+
+  @media screen and (min-width: 768px){
+    :root{
+      --big-font-size: 3.5rem;
+      --h2-font-size: 2rem;
+      --normal-font-size: 1rem;
+    }
 }
 
 /*===== Margens =====*/
@@ -52,7 +52,7 @@
     box-sizing: border-box;
 }
 
-  html{
+html{
     scroll-behavior: smooth;
 }
 
@@ -156,8 +156,9 @@ body{
 
 .nav__item{
     margin-bottom: var(--mb-4);
-  }
-  .nav__link{
+}
+
+.nav__link{
     position: relative;
     color: #fff;
 }
@@ -195,11 +196,13 @@ body{
     background-color: var(--first-color);
   }
 
+/*=== Show menu ===*/
+.show{
+    right: 0;
+}
 
 
 
 
 
 
-
-  
