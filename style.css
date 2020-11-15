@@ -201,7 +201,11 @@ body{
     right: 0;
 }
 
-
+/*===== HOME =====*/
+.home{
+    height: calc(100vh - 3rem);
+    row-gap: 1rem;
+  }
 
 
 
