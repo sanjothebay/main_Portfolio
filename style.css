@@ -324,14 +324,24 @@ body{
 }
 
 .skills__html{
-    width: 95%;
+    width: 75%;
 }
 
 .skills__css{
-    width: 85%;
+    width: 70%;
 }
 
+.skills__js{
+    width: 50%;
+}
 
+.skills__ux{
+    width: 45%;
+}
+
+.skills__img{
+    border-radius: .5rem;
+}
 
 
 
