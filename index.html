@@ -218,12 +218,12 @@
         <section class="contact section" id="contact">
             <h2 class="section-title">Contact</h2>
             <div class="contact__container bd-grid">
-                <form action="" class="contact__form" id="test-form">
+                <form class="contact__form" id="test-form" form method="post" autocomplete="off" name="google-sheet submit-to-google-sheet"">
                     <input type="text" name="Name" placeholder="Name" class="contact__input" id="nameId">
                     <input type="mail" name="Email" placeholder="Email" class="contact__input" id="emailId">
                     <textarea type="text" name="Message" id="" cols="0" rows="10" class="contact__input"
                         id="messageID"></textarea>
-                    <button type="button" value="submit" class="btn btn-dark contact__button button">Submit</button>
+                    <button type="button" value="submit" class="btn btn-dark contact__button button" >Submit</button>
                 </form>
             </div>
         </section>
@@ -247,14 +247,32 @@
         <p>2020&copy;Copyright JC Rodriguez | sanjothebay@gmail.com | +525614383816 </p>
     </footer>
 
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyGCXBLda5Vjoa1WUD13v894vtvgQrF04ct82wUO7wmM-UiY85o/exec'
+        const form = document.forms['google-sheet']
+    
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then((response) =>{
+                alert("Thanks for Contacting us..! We Will Contact You Soon...")
+                $("#nameId").val("")
+                $("#emailId").val("")
+                $("#messageID").val("")
+        
+                })
+                .catch(error => console.error('Error!', error.message))
+                
+        })
+    
+    </script>
 
     <!--===== SCROLLING ACTION =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
 </body>
-
 </html>
