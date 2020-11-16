@@ -275,6 +275,24 @@ body{
     border-radius: .5rem;
 }
 
+a{
+  color: black;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: whitesmoke;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+
 /* ===== SKILLS =====*/
 .skills__container{
     row-gap: 2rem;
@@ -385,6 +403,14 @@ body{
     margin-left: auto;
 }
 
+
+.contact__button:hover{
+  text-decoration: underline;
+  color: red;
+  background-color: whitesmoke;
+  box-shadow: 0 10px 36px rgba(0,0,0,.15);
+}
+
 /* ===== FOOTER =====*/
 .footer{
     background-color: var(--second-color);
@@ -492,133 +518,3 @@ body{
       right: 10%;
     }
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

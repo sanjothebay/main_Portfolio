@@ -63,7 +63,7 @@ sr.reveal('.contact__input',{interval: 200});
 const scriptURL = 'https://script.google.com/macros/s/AKfycbzqBIYAJtYnNdz2V7DJ4mDATx7xIRFg_-cjoNNV3pwUGablSr_h/exec'
 const form = document.forms['google-sheet']
 
-form.addEventListener('submit', e => {
+$("#contact__button").on('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then((response) =>{
