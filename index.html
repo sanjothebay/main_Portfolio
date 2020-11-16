@@ -103,8 +103,12 @@
             <div class="skills__container bd-grid">
                 <div>
                     <h2 class="skills__subtitle">Profesional Skills</h2>
-                    <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id
-                        vero amet, alias architecto consectetur error eum eaque sit.</p>
+                    <p class="skills__text">
+                        <li>Languages in Programming: HTML, CSS, JavaScript, JQuery,  Python.</li>
+                        <li>Databases: MySQL, MongoDB, SQLite, NoSQL, SAP Hanna, Oracle, AngularJS.</li>
+                        <li>Tools: GitHub, GitBadh, Heroku, Node.js, VS Code, Bootstrap4, Foundation</li>
+                        <br>
+                    </p>
                     <div class="skills__data">
                         <div class="skills__names">
                             <i class='bx bxl-html5 skills__icon'></i>
@@ -162,21 +166,33 @@
 
             <div class="work__container bd-grid">
                 <div class="work__img">
+                    <a href="https://sanjothebay.github.io/tech_monterrey_portfolio_hw_project/" target="_blank"><i class='bx bxs-image'></i></a>
+                    <a href="https://github.com/sanjothebay/tech_monterrey_portfolio_hw_project" target="_blank"><i class='bx bxl-github'></i></a>
                     <img src="./images/portfolioprojectpic.JPG" alt="portfolioprojectpic">
                 </div>
                 <div class="work__img">
+                    <a href="https://sanjothebay.github.io/tech_monterrey_portfolio_hw_project/" target="_blank"><i class='bx bxs-image'></i></a>
+                    <a href="https://github.com/sanjothebay/tech_monterrey_portfolio_hw_project" target="_blank"><i class='bx bxl-github'></i></a>
                     <img src="./images/techmonterreyprojectone.JPG" alt="techmonterreyprojectone">
                 </div>
                 <div class="work__img">
+                    <a href="https://sanjothebay.github.io/tech_monterrey_portfolio_hw_project/" target="_blank"><i class='bx bxs-image'></i></a>
+                    <a href="https://github.com/sanjothebay/tech_monterrey_portfolio_hw_project" target="_blank"><i class='bx bxl-github'></i></a>
                     <img src="./images/weatherapp.JPG" alt="weatherapp">
                 </div>
                 <div class="work__img">
+                    <a href="https://sanjothebay.github.io/tech_monterrey_portfolio_hw_project/" target="_blank"><i class='bx bxs-image'></i></a>
+                    <a href="https://github.com/sanjothebay/tech_monterrey_portfolio_hw_project" target="_blank"><i class='bx bxl-github'></i></a>
                     <img src="./images/shedulerapp.JPG" alt="shedulerapp">
                 </div>
                 <div class="work__img">
+                    <a href="https://sanjothebay.github.io/tech_monterrey_portfolio_hw_project/" target="_blank"><i class='bx bxs-image'></i></a>
+                    <a href="https://github.com/sanjothebay/tech_monterrey_portfolio_hw_project" target="_blank"><i class='bx bxl-github'></i></a>
                     <img src="./images/passwordgeneratorapp.JPG" alt="passwordgeneratorapp">
                 </div>
                 <div class="work__img">
+                    <a href="https://sanjothebay.github.io/tech_monterrey_portfolio_hw_project/" target="_blank"><i class='bx bxs-graduation'></i></a>
+                    <a href="https://github.com/sanjothebay/tech_monterrey_portfolio_hw_project" target="_blank"><i class='bx bxs-graduation'></i></a>
                     <img src="./images/asecert.JPG" alt="asecert">
                 </div>
             </div>
@@ -190,7 +206,7 @@
                     <input type="text" placeholder="Name" class="contact__input">
                     <input type="mail" placeholder="Email" class="contact__input">
                     <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                    <input type="button" value="submit" class="contact__button button">
+                    <input type="button" value="submit" class="contact__button button" onclick="submitForm()">
                 </form>
             </div>
         </section>
@@ -209,6 +225,25 @@
         </div>
         <p>2020&copy;Copyright  JC Rodriguez | sanjothebay@gmail.com | +525614383816 </p>
     </footer>
+
+    <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzts1rnn7eIQx9VTzHO-UJnFfzW4geNg1Sv0DAztQMtmKRK7vg/exec'
+    const form = document.forms['google-sheet']
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then((response) =>{
+            alert("Thanks for Contacting us..! We Will Contact You Soon...")
+            $("#nameId").val("")
+            $("#emailId").val("")
+            $("#messageID").val("")
+    
+            })
+            .catch(error => console.error('Error!', error.message))
+            
+    })
+    </script>
 
     <!--===== SCROLLING ACTION =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
