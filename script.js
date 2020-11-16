@@ -63,16 +63,9 @@ sr.reveal('.contact__input',{interval: 200});
 const scriptURL = 'https://script.google.com/macros/s/AKfycbzqBIYAJtYnNdz2V7DJ4mDATx7xIRFg_-cjoNNV3pwUGablSr_h/exec'
 const form = document.forms['google-sheet']
 
-$("#contact__button").on('submit', e => {
+form.addEventListener('submit', e => {
     e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then((response) =>{
-        alert("Thanks for Contacting us..! We Will Contact You Soon...")
-        $("#nameId").val("")
-        $("#emailId").val("")
-        $("#messageID").val("")
-
-        })
-        .catch(error => console.error('Error!', error.message))
-        
-})
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
