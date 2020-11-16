@@ -56,37 +56,3 @@ sr.reveal('.work__img',{interval: 200});
 
 /*SCROLL CONTACT*/
 sr.reveal('.contact__input',{interval: 200});
-
-
-/* Form to Google sheets */
-
-// fetch("https://api.apispreadsheets.com/data/3618/", {
-// 	method: "POST",
-// 	body: JSON.stringify({"data": {}}),
-// }).then(res =>{
-// 	if (res.status === 201){
-// 		// SUCCESS
-// 	}
-// 	else{
-// 		// ERROR
-// 	}
-// })
-
-
-
-// const scriptURL = 'https://script.google.com/macros/s/AKfycbzqBIYAJtYnNdz2V7DJ4mDATx7xIRFg_-cjoNNV3pwUGablSr_h/exec'
-// const form = document.forms['google-sheet']
-
-// form.addEventListener('submit', e => {
-//     e.preventDefault()
-//     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-//         .then((response) =>{
-//         alert("Thanks for Contacting us..! We Will Contact You Soon...")
-//         $("#nameId").val("")
-//         $("#emailId").val("")
-//         $("#messageID").val("")
-
-//         })
-//         .catch(error => console.error('Error!', error.message))
-        
-// })
