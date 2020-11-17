@@ -117,7 +117,7 @@ Your GitHub profile must contain at least the following items:
 
 9. Commit history. Every pinned repository should have at least 20 commits.
 
-### 3. Updated Resume
+## 3. Updated Resume
 
 💁 Need help building a resume? Check out the [Career Services milestone resources](https://sites.google.com/2u.com/careerservices-webdev/coding-milestones/milestone-develop-your-resume).
 
@@ -131,7 +131,7 @@ Your resume should include:
 
 * 3 of your strongest projects/homework assignments with brief description, languages used, and URL
 
-### 4. Updated LinkedIn
+## 4. Updated LinkedIn
 
 💁 Need help updating your LinkedIn? Check out the [Career Services milestone resources for online presence](https://sites.google.com/2u.com/careerservices-webdev/coding-milestones/milestone-polish-online-presence).
 
