@@ -5,7 +5,11 @@ https://sanjothebay.github.io/main_Portfolio/
 https://github.com/sanjothebay/main_Portfolio
 
 
-![image](https://user-images.githubusercontent.com/67298961/99207859-b0c81100-2784-11eb-94a2-54a0718e15d8.png)
+![4mo85i](https://user-images.githubusercontent.com/67298961/99345339-aaef3000-2857-11eb-98be-e4f008fe7976.gif)
+
+![4mo9em](https://user-images.githubusercontent.com/67298961/99345993-33ba9b80-2859-11eb-8f51-96ea05f93860.gif)
+
+![4mo90n](https://user-images.githubusercontent.com/67298961/99345772-a9723780-2858-11eb-9205-bd4ccd3742e6.gif)
 
 
 
